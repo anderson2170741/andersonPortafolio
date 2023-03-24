@@ -561,7 +561,7 @@ input {
     grid-template-columns: 360px 320px;
     column-gap: 3rem;
     justify-content: center;
-    
+
 }
 
 .skills__svg {
@@ -1484,7 +1484,7 @@ textarea.input {
         justify-content: center;
     }
 
-    .home__img{
+    .home__img {
         border-radius: 1.5rem;
         justify-content: center;
     }
@@ -1555,11 +1555,12 @@ textarea.input {
     .home__img {
         width: 200px;
     }
-    
-    .home__img{
+
+    .home__img {
         border-radius: 1.5rem;
         justify-content: center;
     }
+
     .home__title {
         font-size: var(--h1-font-size);
     }
