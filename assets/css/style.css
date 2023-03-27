@@ -370,6 +370,7 @@ input {
 .info__title,
 .info__subtitle {
     font-size: var(--small-font-size);
+    color: var(--box-color);
 }
 
 .info__title {
@@ -1036,8 +1037,10 @@ input {
 }
 
 .contact__card-data {
+    color: var(--box-color);
     display: block;
     margin-bottom: var(--mb-0-75);
+    
 }
 
 .contact__button {
