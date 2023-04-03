@@ -688,6 +688,9 @@ input {
     border-radius: .5rem;
     margin-bottom: var(--mb-1);
     height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .work__box {
@@ -1270,7 +1273,7 @@ textarea.input {
     }
 
     .sidebar {
-        width: 100%;
+        width: 12%;
         z-index: 999;
         transform: translateX(-100%);
     }
@@ -1289,14 +1292,13 @@ textarea.input {
         width: 100%;
         transform: rotate(0deg) translateX(0);
         display: flex;
-        justify-content: center;
+        justify-content: left;
+        align-items: left;
     }
 
     .nav__list {
         flex-direction: column;
         height: 100%;
-        justify-content: center;
-        align-items: center;
     }
 
     .nav__link {
@@ -1306,7 +1308,8 @@ textarea.input {
 
     .nav__link.active-link::after,
     .nav__link:hover::after {
-        bottom: 0;
+        left: -26px;
+    
     }
 
     .nav__close {
@@ -1394,6 +1397,12 @@ textarea.input {
 
 /* For Medium Devices */
 @media screen and (max-width: 768px) {
+
+    .sidebar {
+        width: 16%;
+        
+    }
+
     .about__img {
         width: 250px;
     }
@@ -1472,6 +1481,26 @@ textarea.input {
 }
 
 @media screen and (max-width: 576px) {
+
+    .sidebar {
+        width: 18%;
+    }
+
+    .nav__link.active-link::after,
+    .nav__link:hover::after {
+        left: -12px;
+    }
+
+    .nav__close {
+        display: block;
+        right: 10px;
+    }
+
+    .nav__menu {
+        position: relative;
+        right: 15px;
+    }
+
     .nav__toggle {
         right: initial;
         left: 1.5rem;
@@ -1557,6 +1586,20 @@ textarea.input {
 
 /* For Small Devices */
 @media screen and (max-width: 350px) {
+
+    .sidebar {
+        width: 27%;
+    }
+
+    .nav__link.active-link::after,
+    .nav__link:hover::after {
+        left: -11px;
+    }
+
+    .nav__close {
+        display: block;
+        right: 10px;
+    }
     .container {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
