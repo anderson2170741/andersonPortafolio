@@ -1483,7 +1483,7 @@ textarea.input {
 @media screen and (max-width: 576px) {
 
     .sidebar {
-        width: 18%;
+        width: 23%;
     }
 
     .nav__link.active-link::after,
