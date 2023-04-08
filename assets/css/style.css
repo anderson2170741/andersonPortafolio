@@ -1273,11 +1273,18 @@ textarea.input {
     }
 
     .sidebar {
-        width: 12%;
-        z-index: 999;
-        transform: translateX(-100%);
+        width: 17%; 
+        overflow: hidden;
+        overflow-y: scroll;   
     }
 
+    ::-webkit-scrollbar {
+        background-color: var(--scroll-bar-color);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--scroll-bar-color);
+    }
     .show-sidebar {
         transform: translateX(0);
     }
@@ -1290,6 +1297,7 @@ textarea.input {
     .nav__menu {
         height: 100%;
         width: 100%;
+        
         transform: rotate(0deg) translateX(0);
         display: flex;
         justify-content: left;
@@ -1399,8 +1407,22 @@ textarea.input {
 @media screen and (max-width: 768px) {
 
     .sidebar {
-        width: 16%;
+        width: 18%;
+        overflow: hidden;
+        overflow-y: scroll;
         
+    }
+    ::-webkit-scrollbar {
+        background-color: var(--scroll-bar-color);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--scroll-bar-color);
+    }
+
+    .nav__link.active-link::after,
+    .nav__link:hover::after {
+        left: -16px;
     }
 
     .about__img {
@@ -1483,22 +1505,32 @@ textarea.input {
 @media screen and (max-width: 576px) {
 
     .sidebar {
-        width: 27%;
+        width: 25%;
+        overflow: hidden;
+        overflow-y: scroll;   
+    }
+
+    ::-webkit-scrollbar {
+        background-color: var(--scroll-bar-color);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--scroll-bar-color);
     }
 
     .nav__link.active-link::after,
     .nav__link:hover::after {
-        left: -10px;
+        left: -8px;
     }
 
     .nav__close {
         display: block;
-        right: 8px;
+        right: -5px;
     }
 
     .nav__menu {
         position: relative;
-        right: 15px;
+        left: -8px;
     }
 
     .nav__toggle {
@@ -1588,7 +1620,17 @@ textarea.input {
 @media screen and (max-width: 350px) {
 
     .sidebar {
-        width: 27%;
+        width: 25%;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    ::-webkit-scrollbar {
+        background-color: var(--scroll-bar-color);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--scroll-bar-color);
     }
 
     .nav__link.active-link::after,
@@ -1598,7 +1640,7 @@ textarea.input {
 
     .nav__close {
         display: block;
-        right: 10px;
+        right: -6px;
     }
     .container {
         margin-left: var(--mb-1);
@@ -1653,4 +1695,27 @@ textarea.input {
     .services__content {
         padding-right: 3.5rem;
     }
+}
+
+@media screen and (max-width: 280px) {
+
+    .sidebar {
+        width: 37%;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    ::-webkit-scrollbar {
+        background-color: var(--scroll-bar-color);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--scroll-bar-color);
+    }
+
+    .nav__link.active-link::after,
+    .nav__link:hover::after {
+        left: -11px;
+    }
+
 }
