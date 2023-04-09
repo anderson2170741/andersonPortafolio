@@ -198,6 +198,7 @@ input {
     padding: 3vh;
     text-align: center;
     z-index: 2;
+    
 }
 
 .nav__link {
@@ -262,11 +263,16 @@ input {
 .nav__link:hover::after {
     position: absolute;
     content: '';
-    width: 5px;
-    height: 60px;
+    width: 80px;
+    height: 6px;
     background-color: var(--skin-color);
-    border-radius: 0 5px 5px 0;
-    left: 9px;
+    border-radius: 5px;
+    bottom: -0.3rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: inset 0px 0px 80px var(--skin-color),
+                    0px 0px 40px #ff0;
 }
 
 /*=============== MAIN ===============*/
