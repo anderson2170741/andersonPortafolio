@@ -169,7 +169,7 @@ input {
     background-color: var(--body-color);
     border-right: 1px solid var(--box-color);
     transition: .5s;
-    z-index: var(--z-fixed);
+    
 }
 
 .nav__menu {
@@ -1273,7 +1273,9 @@ textarea.input {
     }
 
     .sidebar {
-        width: 17%; 
+        width: 17%;
+        z-index: 999;
+        transform: translateX(-100%);
         overflow: hidden;
         overflow-y: scroll;   
     }
@@ -1408,6 +1410,7 @@ textarea.input {
 
     .sidebar {
         width: 18%;
+        z-index: 999;
         overflow: hidden;
         overflow-y: scroll;
         
@@ -1506,6 +1509,7 @@ textarea.input {
 
     .sidebar {
         width: 25%;
+        z-index: 999;
         overflow: hidden;
         overflow-y: scroll;   
     }
@@ -1525,7 +1529,7 @@ textarea.input {
 
     .nav__close {
         display: block;
-        right: -5px;
+        right: 5px;
     }
 
     .nav__menu {
@@ -1621,6 +1625,7 @@ textarea.input {
 
     .sidebar {
         width: 25%;
+        z-index: 999;
         overflow: hidden;
         overflow-y: scroll;
     }
@@ -1701,6 +1706,7 @@ textarea.input {
 
     .sidebar {
         width: 37%;
+        z-index: 999;
         overflow: hidden;
         overflow-y: scroll;
     }
